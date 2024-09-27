@@ -1,0 +1,29 @@
+<p>eventbinding1 works!</p>
+<!-- syntax 
+       (eventname)="eventhandler" 
+-->
+    <!-- <button (click)="onClick()" >Click</button> <br><br>
+
+    <img (click)="onImage()" id="myimg" title="Click on Image" src="../../assets/bg12.jpg" alt=""> -->
+    <hr>
+
+    <!-- <input #num1   type="number" placeholder="Enter The Number1"><br><br>
+    <input #num2 type="number" placeholder="Enter The Number2"><br><br>
+
+    <button (click)="onAddition(num1.value,num2.value)" >Addition</button> <br><br>
+
+    <input [value]="result" type="text" placeholder="Result"> -->
+
+<!-- two way data binding 
+        - ngModel => Attribute directive 
+        - we hv to use FormsModule => import section => app.module.ts 
+        - banana in the box 
+        - [(ngModel)]="PropertyName"
+-->
+
+    <input [(ngModel)] ="mynum1"  type="number" placeholder="Enter The Number1"><br><br>
+    <input [(ngModel)] ="mynum2" type="number" placeholder="Enter The Number2"><br><br>
+
+    <button (click)="onAddition1()" >Addition</button> <br><br>
+
+    <input [value]="result" type="text" placeholder="Result">
