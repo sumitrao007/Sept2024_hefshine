@@ -1,0 +1,23 @@
+<p>fordirective works!</p>
+<!-- syntax
+    *ngFor="let item of arrayname/arrayOfObject"
+-->
+
+<table border="1px">
+    <thead>
+        <tr>
+            <th>Sr No</th>
+            <th>Product Name</th>
+            <th>Product Price</th>
+            <th>Product Qty</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of arrObj;index as i ">
+            <td > {{i+1}} </td>
+            <td> {{item.name}} </td>
+            <td> {{item.price}} </td>
+            <td> {{item.qty}} </td>
+        </tr>
+    </tbody>
+</table>

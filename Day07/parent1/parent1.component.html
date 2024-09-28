@@ -1,0 +1,21 @@
+<p>parent1 works!</p>
+
+<input #mydate type="date"> <br><br>
+<button (click)="onSend(mydate.value)">Send Date</button>
+
+<h2> {{ChildStrDataReceived}} </h2>
+
+<h2> ID :: {{childJsonData.id}} </h2>
+<h2>First name :: {{childJsonData.fname}} </h2>
+<h2>Last name:: {{childJsonData.lname}} </h2>
+
+<hr>
+<!-- <app-child1 [ParentStrData]="strData" 
+            [ParentDateData]="dateData"
+></app-child1> -->
+
+<app-child2 (childStrEvent)="ChildStrDataReceived=$event"
+            (childJsonEvent)="childJsonData=$event"
+></app-child2>
+
+
